@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <title>Shortly</title>
+  </head>
+  <body class="root">
+    <div class="page">
+      <header class="header page__header">
+        <div class="header__nav wrapper">
+          <img
+            src="./images/logo_place_header.svg"
+            alt="logo shortly"
+            class="logo header-logo"
+          />
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a href="#" class="menu__list-link">Features</a>
+                <a href="#" class="menu__list-link">Pricing</a>
+                <a href="#" class="menu__list-link">Resources</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="user-nav">
+            <a href="#" class="user-nav__link">Login</a>
+            <a href="#" class="user-nav__link user-nav__link_button button"
+              >Sign Up</a
+            >
+          </div>
+        </div>
+
+        <section class="top wrapper">
+          <div class="top__inner">
+            <h1 class="top__title">More than just shorter links</h1>
+            <p class="top__text">
+              Build your brand’s recognition and get detailed insights on how
+              your links are performing.
+            </p>
+            <button class="top__btn button">Get sturted</button>
+          </div>
+        </section>
+      </header>
+      <!-- main -->
+      <div class="main wrapper">
+        <form action="get" method="post">
+          <div class="form">
+            <input
+              class="form-text"
+              type="text"
+              name="name"
+              placeholder="Shorten a link here..."
+            />
+            <input
+              type="submit"
+              name="Submit"
+              value="Shorten It!"
+              class="form-button button"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

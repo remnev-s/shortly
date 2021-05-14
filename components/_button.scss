@@ -1,0 +1,11 @@
+@use '../vendor/color' as *;
+.button {
+  background-color: $color-buttons;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  &:hover {
+    background-color: $color-buttons-hover;
+  }
+}
