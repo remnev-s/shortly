@@ -487,14 +487,18 @@ html {
   font-weight: 700;
 }
 
+/* form */
 .form {
   width: 100%;
   outline: 1px solid blue;
   padding: 5.2rem 6.4rem;
-  background-color: plum;
   border-radius: 1rem;
   display: flex;
   justify-content: space-between;
+  background-image: url(/images/form-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .form-text {
@@ -521,4 +525,9 @@ input[type=submit] {
   font-weight: 700;
   border-radius: 1rem;
   padding: 1.7rem 4rem;
+}
+
+/* STATICS */
+.statics {
+  background-color: #eff1f7;
 }

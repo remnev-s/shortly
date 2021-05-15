@@ -34,15 +34,18 @@
     }
   }
 }
-
+/* form */
 .form {
   width: 100%;
   outline: 1px solid blue;
   padding: 5.2rem 6.4rem;
-  background-color: plum;
   border-radius: 1rem;
   display: flex;
   justify-content: space-between;
+  background-image: url(/images/form-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .form-text {
   flex: 1 1 auto;
@@ -54,15 +57,22 @@ input {
     padding: 1.3rem 3.7rem;
     color: $text-color;
   }
+
   &:not(:last-child) {
     margin-right: 2.4rem;
   }
-  // min-width: 76.9rem;
 }
 input[type="submit"] {
   display: block;
+
   @include text(2rem, auto, 700) {
     border-radius: 1rem;
     padding: 1.7rem 4rem;
   }
+}
+
+/* STATICS */
+
+.statics {
+  background-color: $bg-full-page;
 }
