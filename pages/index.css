@@ -490,7 +490,6 @@ html {
 /* form */
 .form {
   width: 100%;
-  outline: 1px solid blue;
   padding: 5.2rem 6.4rem;
   border-radius: 1rem;
   display: flex;
@@ -506,6 +505,7 @@ html {
 }
 
 input {
+  outline: none;
   font-size: 2rem;
   line-height: 3.6rem;
   font-weight: 500;
@@ -528,6 +528,78 @@ input[type=submit] {
 }
 
 /* STATICS */
-.statics {
+.main__statistics {
+  position: relative;
+  margin-top: -10rem;
+  padding-top: 20rem;
   background-color: #eff1f7;
+  min-height: 100rem;
+  z-index: -1;
 }
+
+.statistics__title {
+  text-align: center;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  font-weight: 700;
+  color: #34313d;
+  margin: 12rem 0 1.2rem;
+}
+.statistics__text {
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  font-weight: 500;
+  color: #9e9aa8;
+  margin: 0 auto;
+  max-width: 54rem;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  margin: 10rem auto 12rem;
+}
+.card :nth-of-type(2) {
+  position: relative;
+  top: 4rem;
+  left: 0;
+}
+.card :nth-of-type(3) {
+  position: relative;
+  top: 8rem;
+  left: 0;
+}
+.card__item {
+  position: relative;
+  background-color: #fff;
+  width: 35rem;
+  min-height: 26.7rem;
+  border-radius: 0.5rem;
+  padding: 7.7rem 3.2rem 1.4rem;
+}
+.card__item:not(:last-child) {
+  margin-right: 1rem;
+}
+.card__icon {
+  position: absolute;
+  top: -4rem;
+  left: 3.2rem;
+  width: 8.8rem;
+  height: 8.8rem;
+}
+.card__title {
+  font-size: 2.2rem;
+  line-height: auto;
+  font-weight: 700;
+  color: #34313d;
+  margin-bottom: 1.2rem;
+}
+.card__text {
+  font-size: 1.5rem;
+  line-height: 2.6rem;
+  font-weight: 400;
+  color: #9e9aa8;
+}
+
+/* Banner */
