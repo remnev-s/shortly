@@ -1,5 +1,9 @@
 @use "vendor/frameworks" as *;
 
+.logo {
+  width: 12rem;
+  height: 3.3rem;
+}
 .top {
   // margin-top: 10rem;
   // align-items: center;
@@ -26,12 +30,6 @@
   &__inner {
     max-width: 60rem;
     display: block;
-  }
-  &__btn {
-    padding: 1.3rem 4rem;
-    border-radius: 3rem;
-    @include text(2rem, auto, 700) {
-    }
   }
 }
 /* form */
@@ -148,3 +146,35 @@ input[type="submit"] {
 }
 
 /* Banner */
+.banner {
+  background-image: url(/images/banner-bg.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 25rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    @include text(4rem, 4.8rem, 700);
+    color: #fff;
+    margin-bottom: 3.2rem;
+  }
+}
+
+.footer {
+  background-color: $bg-footer;
+  &__columns {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+.footer-logo {
+  outline: 1px solid red;
+  flex: 1 1 auto;
+  text-align: start;
+}

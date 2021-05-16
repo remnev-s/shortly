@@ -432,6 +432,14 @@ html {
   background-color: #9ae3e3;
 }
 
+.start-btn {
+  padding: 1.3rem 4rem;
+  border-radius: 3rem;
+  font-size: 2rem;
+  line-height: auto;
+  font-weight: 700;
+}
+
 @font-face {
   font-family: "Poppins";
   src: url(../vendor/fonts/Poppins-Bold.woff2) format("woff2"), url(../vendor/fonts/Poppins-Bold.woff) format("woff"), url(../vendor/fonts/Poppins-Bold.ttf) format("truetype");
@@ -453,6 +461,11 @@ html {
   font-style: normal;
   font-stretch: normal;
 }
+.logo {
+  width: 12rem;
+  height: 3.3rem;
+}
+
 .top {
   flex: 1 1 auto;
   display: flex;
@@ -478,13 +491,6 @@ html {
 .top__inner {
   max-width: 60rem;
   display: block;
-}
-.top__btn {
-  padding: 1.3rem 4rem;
-  border-radius: 3rem;
-  font-size: 2rem;
-  line-height: auto;
-  font-weight: 700;
 }
 
 /* form */
@@ -603,3 +609,36 @@ input[type=submit] {
 }
 
 /* Banner */
+.banner {
+  background-image: url(/images/banner-bg.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 25rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.banner__title {
+  font-size: 4rem;
+  line-height: 4.8rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 3.2rem;
+}
+
+.footer {
+  background-color: #232127;
+}
+.footer__columns {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.footer-logo {
+  outline: 1px solid red;
+  flex: 1 1 auto;
+  text-align: start;
+}

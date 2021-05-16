@@ -1,0 +1,9 @@
+@use '../vendor/mixins' as *;
+@use '../vendor/color' as *;
+
+.start-btn {
+  padding: 1.3rem 4rem;
+  border-radius: 3rem;
+  @include text(2rem, auto, 700) {
+  }
+}
