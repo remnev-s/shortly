@@ -1,0 +1,13 @@
+@use '../mixins/mixins' as *;
+@use '../vendor/color' as *;
+
+.main {
+  &__statistics {
+    position: relative;
+    margin-top: -10rem;
+    padding-top: 20rem;
+    background-color: $bg-full-page;
+    min-height: 100rem;
+    z-index: -1;
+  }
+}

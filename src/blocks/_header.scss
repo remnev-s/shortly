@@ -1,0 +1,122 @@
+@use '../mixins/mixins' as *;
+@use '../vendor/color' as *;
+
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  outline: 1px solid red;
+  min-height: 80rem;
+  max-width: 1600px;
+
+  &__nav {
+    width: 100%;
+    margin-top: 4.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: 1px solid green;
+    // flex: 0 1 auto;
+
+    @media (max-width: 72rem) {
+      flex-direction: column;
+      flex: 1 1 auto;
+    }
+  }
+  &-logo {
+    margin-right: 4.5rem;
+    @media (max-width: 72rem) {
+      align-self: flex-start;
+    }
+  }
+}
+
+.header-navigation {
+  display: flex;
+  justify-content: space-between;
+  outline: 1px solid pink;
+  width: 100%;
+}
+.menu {
+  // flex: 1 1 auto;
+
+  &__list {
+    &-item {
+      list-style: none;
+
+      @media (max-width: 72rem) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+      }
+    }
+    &-link {
+      @include text(1.5rem, 1.5, 500) {
+        color: $text-color;
+        text-decoration: none;
+      }
+      &:not(:last-child) {
+        margin-right: 3rem;
+        @media (max-width: 72rem) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+.user-nav {
+  @media (max-width: 72rem) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__link {
+    @include text(1.5rem, 1.5, 500) {
+      color: $text-color;
+      text-decoration: none;
+      &:not(:last-child) {
+        margin-right: 3rem;
+        @media (max-width: 72rem) {
+          margin-right: 0;
+        }
+      }
+    }
+    &_button {
+      outline: 1px solid blue;
+      padding: 0.9rem 2.4rem;
+      border-radius: 3rem;
+    }
+  }
+}
+
+.header-content {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+
+  &__title {
+    @include text(8rem, 9rem, 700) {
+      color: $description-color;
+      letter-spacing: -0.2rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__text {
+    margin-bottom: 3.6rem;
+    @include text(2.2rem, 3.6rem, 500) {
+      color: $text-color;
+    }
+  }
+  &__inner {
+    max-width: 60rem;
+    display: block;
+  }
+}

@@ -1,0 +1,18 @@
+@forward 'vendor/normalize';
+@forward 'vendor/font';
+@forward 'vendor/color';
+@forward 'mixins/mixins';
+
+@forward 'blocks/page';
+@forward 'blocks/root';
+@forward 'blocks/wrapper';
+@forward 'blocks/header';
+@forward 'blocks/form';
+@forward 'blocks/main';
+@forward 'blocks/statistics';
+@forward 'blocks/banner';
+@forward 'blocks/footer';
+@forward 'blocks/logo';
+
+@forward 'components/button';
+@forward 'components/start-btn';

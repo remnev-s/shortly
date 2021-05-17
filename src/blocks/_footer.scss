@@ -1,0 +1,63 @@
+@use '../mixins/mixins' as *;
+@use '../vendor/color' as *;
+.footer {
+  background-color: $bg-footer;
+  &__columns {
+    display: flex;
+    justify-content: space-between;
+    padding: 7.2rem 0;
+  }
+  &__column {
+    &:not(:last-child) {
+      margin-right: 10rem;
+    }
+  }
+
+  &__column-heading {
+    margin-bottom: 2.2rem;
+    @include text(1.6rem, auto, 700) {
+      color: #fff;
+    }
+  }
+
+  &__column-links {
+  }
+  &__column-list {
+    list-style: none;
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__column-link {
+    text-decoration: none;
+    transition: all 0.5s linear;
+    @include text(1.5rem, auto, 400) {
+      color: $text-color;
+      letter-spacing: -0.2.3rem;
+    }
+
+    &:hover {
+      color: $color-buttons;
+      opacity: 1;
+    }
+  }
+
+  &__social-icon {
+    &.path {
+      fill-opacity: 0;
+    }
+    &:hover path {
+      transition: all 0.5s linear;
+      fill: $color-buttons;
+      fill-opacity: 1;
+      cursor: pointer;
+    }
+
+    margin-right: 1rem;
+  }
+}
+
+.footer-logo {
+  flex: 1 1 auto;
+}
