@@ -562,9 +562,21 @@ input[type=submit] {
 }
 
 .card {
+  position: relative;
   display: flex;
   justify-content: space-between;
   margin: 10rem auto 12rem;
+  outline: 1px solid blue;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50rem;
+  height: 0.5rem;
+  background-color: green;
 }
 .card :nth-of-type(2) {
   position: relative;
@@ -633,12 +645,51 @@ input[type=submit] {
 }
 .footer__columns {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: space-between;
+  padding: 7.2rem 0;
+}
+.footer__column:not(:last-child) {
+  margin-right: 10rem;
+}
+.footer__column-heading {
+  margin-bottom: 2.2rem;
+  font-size: 1.6rem;
+  line-height: auto;
+  font-weight: 700;
+  color: #fff;
+}
+.footer__column-list {
+  list-style: none;
+}
+.footer__column-list:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.footer__column-link {
+  text-decoration: none;
+  transition: all 0.5s linear;
+  font-size: 1.5rem;
+  line-height: auto;
+  font-weight: 400;
+  color: #9e9aa8;
+  letter-spacing: -0.2 0.3rem;
+}
+.footer__column-link:hover {
+  color: #2bd0d0;
+  opacity: 1;
+}
+.footer__social-icon {
+  margin-right: 1rem;
+}
+.footer__social-icon.path {
+  fill-opacity: 0;
+}
+.footer__social-icon:hover path {
+  transition: all 0.5s linear;
+  fill: #2bd0d0;
+  fill-opacity: 1;
+  cursor: pointer;
 }
 
 .footer-logo {
-  outline: 1px solid red;
   flex: 1 1 auto;
-  text-align: start;
 }
