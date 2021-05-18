@@ -5,9 +5,9 @@
   &__statistics {
     position: relative;
     margin-top: -10rem;
-    padding-top: 20rem;
+    padding: 20rem 0;
     background-color: $bg-full-page;
-    min-height: 100rem;
+    height: 100%;
     z-index: -1;
   }
 }
