@@ -2,12 +2,6 @@
 
 .page {
   &__header {
-    margin: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url(../images/working_with_computer.svg);
-    background-position: center right;
-    background-repeat: no-repeat;
+    overflow: hidden;
   }
 }
