@@ -5,41 +5,46 @@
   &__columns {
     display: flex;
     justify-content: space-between;
-    padding: 7.2rem 0;
+    padding-top: 7.2rem;
+    padding-bottom: 7.2rem;
   }
   &__column {
     &:not(:last-child) {
       margin-right: 10rem;
+      @media (max-width: 930px) {
+        margin-right: 5%;
+      }
     }
-  }
-
-  &__column-heading {
-    margin-bottom: 2.2rem;
-    @include text(1.6rem, auto, 700) {
-      color: #fff;
+    &-heading {
+      margin-bottom: 2.2rem;
+      @include text(1.6rem, auto, 700) {
+        color: #fff;
+      }
     }
-  }
-
-  &__column-links {
-  }
-  &__column-list {
-    list-style: none;
-    &:not(:last-child) {
-      margin-bottom: 1rem;
+    &-list {
+      list-style: none;
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
     }
-  }
-
-  &__column-link {
-    text-decoration: none;
-    transition: all 0.5s linear;
-    @include text(1.5rem, auto, 400) {
-      color: $text-color;
-      letter-spacing: -0.2.3rem;
+    &-link {
+      text-decoration: none;
+      transition: all 0.5s linear;
+      @include text(1.5rem, auto, 400) {
+        color: $text-color;
+        letter-spacing: -0.2.3rem;
+      }
     }
-
     &:hover {
       color: $color-buttons;
       opacity: 1;
+    }
+
+    &-social {
+      @media (max-width: 930px) {
+        display: flex;
+        flex-direction: column;
+      }
     }
   }
 
@@ -53,9 +58,14 @@
       fill-opacity: 1;
       cursor: pointer;
     }
-    margin-right: 1rem;
+    &:not(:last-child) {
+      margin-right: 1rem;
+      @media (max-width: 930px) {
+        margin-right: 0;
+      }
+    }
 
-    @media (max-width: 720px) {
+    @media (max-width: 930px) {
       margin-right: 0;
       margin-bottom: 1rem;
     }

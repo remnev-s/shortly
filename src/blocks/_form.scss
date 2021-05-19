@@ -11,9 +11,18 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  @media (max-width: 720px) {
+    flex-direction: column;
+    padding: 2.4rem;
+  }
 }
+
 .form-text {
   flex: 1 1 auto;
+  @media (max-width: 720px) {
+    width: 100%;
+    margin-bottom: 1.6rem;
+  }
 }
 input {
   outline: none;

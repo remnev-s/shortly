@@ -207,7 +207,6 @@
 }
 
 .header-content {
-  outline: 1px solid red;
   position: relative;
 
   flex: 1 1 auto;
@@ -216,7 +215,6 @@
   align-items: center;
   width: 100%;
   @media (max-width: 720px) {
-    outline: 1px solid orange;
     flex-direction: column;
     justify-content: flex-end;
   }
@@ -230,7 +228,7 @@
       align-self: center;
       text-align: center;
       max-width: 100%;
-      margin-top: 50rem;
+      margin: 50rem 0 8.8rem;
     }
   }
 
@@ -239,6 +237,10 @@
       color: $description-color;
       letter-spacing: -0.2rem;
       margin-bottom: 0.5rem;
+      @media (max-width: 620px) {
+        @include text(4.2rem, 4.8rem, 700) {
+        }
+      }
     }
   }
 
@@ -247,15 +249,18 @@
     @include text(2.2rem, 3.6rem, 500) {
       color: $text-color;
     }
+    @media (max-width: 620px) {
+      @include text(1.8rem, 3rem, 500);
+    }
   }
-}
 
-.header-content__image {
-  width: 733px;
-  height: 482px;
-  position: absolute;
-  top: 10rem;
-  right: -25rem;
-  outline: 1px solid red;
-  align-items: flex-end;
+  &__image {
+    width: 733px;
+    height: 482px;
+    position: absolute;
+    top: 10rem;
+    right: -25rem;
+    // outline: 1px solid red;
+    align-items: flex-end;
+  }
 }
