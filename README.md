@@ -1,5 +1,5 @@
 # Промо страница для сокращения ссылок
 
-![github.com/remnev-s/Supreme](src/images/Screenshot.png)
+![github.com/remnev-s/shortly](src/images/screenshot.png)
 
-### Посмотреть сайт можно по [ссылке](shortly.mcdir.me)
+### Посмотреть сайт можно по [ссылке](http://shortly.mcdir.me/)
