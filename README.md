@@ -2,4 +2,4 @@
 
 ![github.com/remnev-s/shortly](src/images/screenshot.png)
 
-### Посмотреть сайт можно по [ссылке](http://shortly.mcdir.me/)
+### Посмотреть сайт можно по <a href="http://shortly.mcdir.me//" target="_blank">ссылке</a>
