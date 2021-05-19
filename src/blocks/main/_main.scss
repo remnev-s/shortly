@@ -1,5 +1,5 @@
-@use '../mixins/mixins' as *;
-@use '../vendor/color' as *;
+@use '../../mixins/mixins' as *;
+@use '../../vendor/color' as *;
 
 .main {
   &__statistics {
@@ -9,5 +9,8 @@
     background-color: $bg-full-page;
     height: 100%;
     z-index: -1;
+    @media (max-width: 375px) {
+      padding: 8rem 0 18rem;
+    }
   }
 }

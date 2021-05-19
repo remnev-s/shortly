@@ -1,8 +1,8 @@
-let menuBtn = document.querySelector(".menu__btn");
+let burgerBtn = document.querySelector(".burger-menu");
 let openMenu = document.querySelector(".header-navigation");
 
-menuBtn.addEventListener("click", function () {
+burgerBtn.addEventListener("click", function () {
   console.log("work");
-  menuBtn.classList.toggle("active");
+  burgerBtn.classList.toggle("active");
   openMenu.classList.toggle("active");
 });

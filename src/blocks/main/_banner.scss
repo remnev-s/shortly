@@ -1,5 +1,5 @@
-@use '../mixins/mixins' as *;
-@use '../vendor/color' as *;
+@use '../../mixins/mixins' as *;
+@use '../../vendor/color' as *;
 .banner {
   background-image: url(../images/banner-bg.svg);
   background-size: cover;
@@ -15,5 +15,9 @@
     @include text(4rem, 4.8rem, 700);
     color: #fff;
     margin-bottom: 3.2rem;
+    text-align: center;
+    @media (max-width: 375px) {
+      @include text(2.8rem, 4.8rem, 700);
+    }
   }
 }

@@ -1,0 +1,44 @@
+@use '../../mixins/mixins' as *;
+@use '../../vendor/color' as *;
+
+.menu {
+  position: relative;
+
+  &__list {
+    @media (max-width: 720px) {
+      margin: 4rem 0 6.3rem;
+    }
+    &-item {
+      list-style: none;
+
+      @media (max-width: 720px) {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+    &-link {
+      @include text(1.5rem, 1.5, 500) {
+        color: $text-color;
+        text-decoration: none;
+        transition: all 0.5s linear;
+        &:hover {
+          opacity: 0.5;
+        }
+
+        @media (max-width: 720px) {
+          font-size: 1.8rem;
+          color: #fff;
+        }
+      }
+
+      &:not(:last-child) {
+        margin-right: 3rem;
+        @media (max-width: 720px) {
+          margin: 0 0 3rem;
+        }
+      }
+    }
+  }
+}

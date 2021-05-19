@@ -1,0 +1,32 @@
+@use '../../mixins/mixins' as *;
+@use '../../vendor/color' as *;
+
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 80rem;
+  // max-width: 1600px;
+
+  &__nav {
+    width: 100%;
+    margin-top: 4.8rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    @media (max-width: 720px) {
+      display: flex;
+
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &-logo {
+    @media (max-width: 720px) {
+      align-self: flex-start;
+    }
+  }
+}

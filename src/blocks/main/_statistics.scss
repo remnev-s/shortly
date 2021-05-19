@@ -1,5 +1,5 @@
-@use '../mixins/mixins' as *;
-@use '../vendor/color' as *;
+@use '../../mixins/mixins' as *;
+@use '../../vendor/color' as *;
 
 .statistics {
   &__card {
@@ -12,6 +12,9 @@
       color: $description-color;
       margin: 12rem 0 1.2rem;
     }
+    @media (max-width: 375px) {
+      @include text(2.8rem, 4.8rem, 700);
+    }
   }
 
   &__text {
@@ -20,6 +23,9 @@
       color: $text-color;
       margin: 0 auto;
       max-width: 54rem;
+    }
+    @media (max-width: 375px) {
+      @include text(1.6rem, 2.8rem, 500);
     }
   }
 }

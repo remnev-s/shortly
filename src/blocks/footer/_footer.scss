@@ -1,5 +1,5 @@
-@use '../mixins/mixins' as *;
-@use '../vendor/color' as *;
+@use '../../mixins/mixins' as *;
+@use '../../vendor/color' as *;
 .footer {
   background-color: $bg-footer;
   &__columns {
@@ -7,12 +7,24 @@
     justify-content: space-between;
     padding-top: 7.2rem;
     padding-bottom: 7.2rem;
+    @media (max-width: 620px) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
   }
   &__column {
     &:not(:last-child) {
       margin-right: 10rem;
       @media (max-width: 930px) {
         margin-right: 5%;
+      }
+      @media (max-width: 620px) {
+        margin-right: 0;
+        &:not(:nth-of-type(3)) {
+          margin-bottom: 4rem;
+          // outline: 1px solid red;
+        }
       }
     }
     &-heading {
@@ -34,16 +46,21 @@
         color: $text-color;
         letter-spacing: -0.2.3rem;
       }
-    }
-    &:hover {
-      color: $color-buttons;
-      opacity: 1;
+      &:hover {
+        color: $color-buttons;
+        opacity: 1;
+      }
     }
 
     &-social {
       @media (max-width: 930px) {
         display: flex;
         flex-direction: column;
+      }
+      @media (max-width: 620px) {
+        display: flex;
+        flex-direction: row;
+        margin-top: 5rem;
       }
     }
   }
@@ -63,6 +80,10 @@
       @media (max-width: 930px) {
         margin-right: 0;
       }
+
+      @media (max-width: 620px) {
+        margin-right: 1rem;
+      }
     }
 
     @media (max-width: 930px) {
@@ -74,4 +95,7 @@
 
 .footer-logo {
   flex: 1 1 auto;
+  @media (max-width: 620px) {
+    margin-bottom: 5rem;
+  }
 }

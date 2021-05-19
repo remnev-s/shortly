@@ -1,0 +1,26 @@
+@forward 'vendor/normalize';
+@forward 'vendor/font';
+@forward 'vendor/color';
+@forward 'mixins/mixins';
+
+@forward 'blocks/page/page';
+@forward 'blocks/root/root';
+@forward 'blocks/wrapper/wrapper';
+
+@forward 'blocks/header/header';
+@forward 'blocks/header/burger-menu';
+@forward 'blocks/header/header-navigation';
+@forward 'blocks/header/menu';
+@forward 'blocks/header/user-nav';
+@forward 'blocks/header/header-content';
+
+@forward 'blocks/main/main';
+@forward 'blocks/main/form';
+@forward 'blocks/main/statistics';
+@forward 'blocks/main/banner';
+
+@forward 'blocks/footer/footer';
+@forward 'blocks/logo/logo';
+
+@forward 'components/button';
+@forward 'components/start-btn';

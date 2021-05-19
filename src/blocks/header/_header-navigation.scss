@@ -1,0 +1,22 @@
+.header-navigation {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  @media (max-width: 720px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3a3054;
+    width: 90%;
+    border-radius: 1rem;
+    display: none;
+    z-index: 2;
+
+    &.active {
+      position: absolute;
+      top: 10rem;
+      display: flex;
+    }
+  }
+}
